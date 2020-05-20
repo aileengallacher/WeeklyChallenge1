@@ -54,10 +54,10 @@ async function Program() {
     let userName = await askQuestion("Please enter your name: ");
     console.log();
     console.log(`Welcome ${userName}`);
-    console.log("Choose a drink below to see its ingredients.");
+    console.log("Let's make a drink.");
     console.log();
     while (true) {
-        console.log("Select a drink:");
+        console.log("Select your drink:");
         console.log("[1] Cappuccino");
         console.log("[2] Black Tea");
         console.log("[3] Orange Juice");
@@ -70,8 +70,8 @@ async function Program() {
             console.log(`You have selected ${drink1.drink}.`)
             let outputIngredients = "The ingredients are ";
             for (let i = 0; i < drink1.ingredients.length; i++) {
-                let drinkChecked = drink1.ingredients[i];
-                outputIngredients += drinkChecked;
+                let hobby = drink1.ingredients[i];
+                outputIngredients += hobby;
                 if (i == drink1.ingredients.length - 2) {   // For the second last element 
                     outputIngredients += " and ";
                 } else if (i == drink1.ingredients.length - 1) {   // For the last element
@@ -85,8 +85,8 @@ async function Program() {
             console.log(`You have selected ${drink2.drink}.`);
             let outputIngredients = "The ingredients are ";
             for (let i = 0; i < drink2.ingredients.length; i++) {
-                let drinkChecked = drink2.ingredients[i];
-                outputIngredients += drinkChecked;
+                let hobby = drink2.ingredients[i];
+                outputIngredients += hobby;
                 if (i == drink2.ingredients.length - 2) {
                     outputIngredients += " and ";
                 } else if (i == drink2.ingredients.length - 1) {
@@ -101,8 +101,8 @@ async function Program() {
             console.log(`You have selected ${drink3.drink}.`);
             let outputIngredients = "The ingredients are ";
             for (let i = 0; i < drink3.ingredients.length; i++) {
-                let drinkChecked = drink3.ingredients[i];
-                outputIngredients += drinkChecked;
+                let hobby = drink3.ingredients[i];
+                outputIngredients += hobby;
                 if (i == drink3.ingredients.length - 2) {
                     outputIngredients += " and ";
                 } else if (i == drink3.ingredients.length - 1) {
@@ -116,8 +116,8 @@ async function Program() {
             console.log(`You have selected ${drink4.drink}.`);
             let outputIngredients = "The ingredients are ";
             for (let i = 0; i < drink4.ingredients.length; i++) {
-                let drinkChecked = drink4.ingredients[i];
-                outputIngredients += drinkChecked;
+                let hobby = drink4.ingredients[i];
+                outputIngredients += hobby;
                 if (i == drink4.ingredients.length - 2) {
                     outputIngredients += " and ";
                 } else if (i == drink4.ingredients.length - 1) {
@@ -131,8 +131,8 @@ async function Program() {
             console.log(`You have selected ${drink5.drink}.`);
             let outputIngredients = "The ingredients are ";
             for (let i = 0; i < drink5.ingredients.length; i++) {
-                let drinkChecked = drink5.ingredients[i];
-                outputIngredients += drinkChecked;
+                let hobby = drink5.ingredients[i];
+                outputIngredients += hobby;
                 if (i == drink5.ingredients.length - 2) {
                     outputIngredients += " and ";
                 } else if (i == drink5.ingredients.length - 1) {
@@ -154,4 +154,4 @@ async function Program() {
 }
 Program().then(() => {
     process.exit(0);
-});
+}); 
